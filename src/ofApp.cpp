@@ -12,11 +12,11 @@ void ofApp::setup(){
 	ofEnableDepthTest();
 
 	texture.loadImage("texture.jpg");
-    objShape.loadObj("D:/Projecten/experimenties/OF/of_v0.8.1_win_cb_release/apps/myApps/retex/bin/data/sphere_06.obj");
+    objShape.loadObj("data/sphere_06.obj");
     objShape.reverseNormals();
     objShape.setTexture(texture);
 
-    setupCam();
+    //setupCam();
 
 	//light.enable();
     light.setPosition(-500,0,-100);
@@ -55,10 +55,10 @@ void ofApp::setupCam(){
 //--------------------------------------------------------------
 void ofApp::update(){
 
-    vidGrabber.update();
+    //vidGrabber.update();
 
-    unsigned char * pixels  = vidGrabber.getPixels();
-    texture.setFromPixels(pixels,vidGrabber.getWidth(),vidGrabber.getHeight(),OF_IMAGE_COLOR);
+    //unsigned char * pixels  = vidGrabber.getPixels();
+    //texture.setFromPixels(pixels,vidGrabber.getWidth(),vidGrabber.getHeight(),OF_IMAGE_COLOR);
     //texture.resize(1280,720);
     //objShape.setTexture(texture);
 
